@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", ev => {
 
 function MostrarDatosConfiguracion() {
     //Truco !Fetch
-let url ;
+let url = "/js/Configuraciones.json" ;
 
     fetch(url)
     
