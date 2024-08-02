@@ -1,21 +1,12 @@
 // importar Crear HTMl para tener un código mas limpio
 import { MostrarHtml } from "/js/CrearHML.js"
+import {MostrarDatosEnConsola} from "/js/Consultar.js"
 
 //Componentes
 document.addEventListener("DOMContentLoaded", ev => {
     MostrarHtml()
-    MostrarDatosConfiguracion()
+    MostrarDatosEnConsola()
 })
 
-function MostrarDatosConfiguracion() {
-    //Truco !Fetch
-let url = "/js/Configuraciones.json" ;
 
-    fetch(url)
-    
-        .then(response => response.json())
-    
-        .then(data => console.log(data));
-    
 
-}
