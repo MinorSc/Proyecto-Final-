@@ -8,6 +8,8 @@ export function MostrarHtml() {
     let Navbar = document.getElementById("Navbar").innerHTML = CrearNavbar ();
     let Footer = document.getElementById("Footer").innerHTML = CrearFooter ();
     let Noticias = document.getElementById("Noticias").innerHTML = CrearTarjetaNoticias ();
+    let Banner1 = document.getElementById("Banner__1").innerHTML = CrearBanner1 ();
+    let Banner2 = document.getElementById("Banner__2").innerHTML = CrearBanner2 ();
 
 }
 
@@ -79,4 +81,44 @@ function  CrearParrafo() {
     let html = `<p> </p>`
 
     return html;
+}
+
+
+
+// Creación de los Banner
+function CrearBanner1() {
+    let htmlBanner1 = `
+         <section class="banner banner-tarjetas-uno " id="Banner1">
+                    <div class="container">
+                        <h2>Lorem ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui laudantium id quam magni
+                            accusantium,
+                            veritatis, ipsam labore, reprehenderit dolore repudiandae nemo sint deserunt! Suscipit
+                            facilis qui
+                            inventore
+                            consequatur fugit.</p>
+                        <a href="#" class="boton">Más información <i class="fas fa-chevron-right"></i></a>
+                </section>
+    `
+
+    return htmlBanner1
+}
+
+
+function CrearBanner2() {
+    let htmlBanner2 = `
+          <section class="banner banner-tarjetas-dos " id="Banner2">
+                    <div class="container">
+                        <h2>Lorem ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui laudantium id quam magni
+                            accusantium,
+                            veritatis, ipsam labore, reprehenderit dolore repudiandae nemo sint deserunt! Suscipit
+                            facilis qui
+                            inventore
+                            consequatur fugit.</p>
+                        <a href="#" class="boton">Más información <i class="fas fa-chevron-right"></i></a>
+                </section>
+    `
+
+    return htmlBanner2
 }
