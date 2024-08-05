@@ -10,6 +10,7 @@ export function MostrarHtml() {
     let Noticias = document.getElementById("Noticias").innerHTML = CrearTarjetaNoticias ();
     let Banner1 = document.getElementById("Banner__1").innerHTML = CrearBanner1 ();
     let Banner2 = document.getElementById("Banner__2").innerHTML = CrearBanner2 ();
+    let MostrarTablaDatos = document.getElementById("Tabla").innerHTML = CrearTabla ();
 
 }
 
@@ -121,4 +122,33 @@ function CrearBanner2() {
     `
 
     return htmlBanner2
+}
+
+
+
+function CrearTabla() {
+    let ID = "".value
+    let Nombre = "".value
+    let Apellido = "".value
+
+    let TablaDatos = `
+                    <thead class="thead-inverse">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${ID}</td>
+                    <td>${Nombre}</td>
+                    <td>${Apellido}</td>
+
+                </tr>
+
+            </tbody>
+    `
+    return TablaDatos
 }
