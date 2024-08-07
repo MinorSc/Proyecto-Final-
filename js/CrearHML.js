@@ -15,7 +15,7 @@ export function MostrarHtml() {
 }
 
 // NavBar
-function CrearNavbar() {
+const CrearNavbar=() => {
     let html = `
     <a class="navbar-brand" href="#">
                 <img src="img/1-Logo.png" alt="Logo NoticiasTecnológicas" class="navegacion-principal__marca">
@@ -42,7 +42,7 @@ function CrearNavbar() {
 }
 
 // Footer
-function CrearFooter() {
+const CrearFooter=() => {
     let html = `
     <h3>Derechos de Autor de NoticiasTecnológicas</h3>
             <p>Sigue a NoticiasTecnológicas</p>
@@ -60,7 +60,7 @@ function CrearFooter() {
 
 
 // Main -Section de noticias
-function CrearTarjetaNoticias() {
+const CrearTarjetaNoticias=() => {
     let html = `
     <section class=" banner  col-lg-4 ">
                     <div class="card h-100">
@@ -78,7 +78,7 @@ function CrearTarjetaNoticias() {
     return html
 }
 
-function  CrearParrafo() {
+const  CrearParrafo=() => {
     let html = `<p> </p>`
 
     return html;
@@ -87,7 +87,7 @@ function  CrearParrafo() {
 
 
 // Creación de los Banner
-function CrearBanner1() {
+const CrearBanner1=() => {
     let htmlBanner1 = `
          <section class="banner banner-tarjetas-uno " id="Banner1">
                     <div class="container">
@@ -106,7 +106,7 @@ function CrearBanner1() {
 }
 
 
-function CrearBanner2() {
+const CrearBanner2=() => {
     let htmlBanner2 = `
           <section class="banner banner-tarjetas-dos " id="Banner2">
                     <div class="container">
@@ -126,7 +126,7 @@ function CrearBanner2() {
 
 
 
-function CrearTabla() {
+const CrearTabla=() => {
     let ID = "".value
     let Nombre = "".value
     let Apellido = "".value
