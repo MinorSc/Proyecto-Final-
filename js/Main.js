@@ -1,5 +1,5 @@
 // importar Crear HTMl para tener un código mas limpio
-import { ObtenerDatosConfiguracion } from "/js/Servicios_Config.js"
+import { ObtenerDatosConfiguracion, ObtenerDatosApiRick } from "/js/Servicios_Config.js"
 import { MostrarHtml } from "/js/Global.js"
 
 
@@ -7,6 +7,7 @@ import { MostrarHtml } from "/js/Global.js"
 document.addEventListener("DOMContentLoaded", ev => {
     MostrarHtml()
     ObtenerDatosConfiguracion()
+    ObtenerDatosApiRick()
 })
 
 
