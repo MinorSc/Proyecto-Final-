@@ -12,6 +12,7 @@ export const ObtenerDatosConfiguracion = async () => {
         const data = await response.json();
 
         console.table(data);
+        return data
     } else {
         console.log("Error consultar el API" +response.status)
     }

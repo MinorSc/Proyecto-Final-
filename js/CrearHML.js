@@ -4,13 +4,6 @@
 
 //0-
 
-export function MostrarHtml() {
-    let Noticias = document.getElementById("Noticias").innerHTML = CrearTarjetaNoticias ();
-    let Banner1 = document.getElementById("Banner__1").innerHTML = CrearBanner1 ();
-    let Banner2 = document.getElementById("Banner__2").innerHTML = CrearBanner2 ();
-    let MostrarTablaDatos = document.getElementById("Tabla").innerHTML = CrearTabla ();
-
-}
 
 
 
