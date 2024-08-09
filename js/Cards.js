@@ -1,6 +1,13 @@
 import {ObtenerDatosApiRick} from "/js/Servicios_Config.js"
 
 
+let respuestas = []
+
+document.addEventListener('DOMContentLoaded', ev => {
+  MostrarCard();
+})
+
+
 export const  MostrarCard= async() => {
 
     const Datos = await ObtenerDatosApiRick()
